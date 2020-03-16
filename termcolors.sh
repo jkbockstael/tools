@@ -5,6 +5,7 @@
 function enumeratecolors() {
     for color in $(seq 1 $(tput colors)); do
         echo "$(tput setaf ${color})${color}$(tput sgr0)"
+        echo "$(tput setab ${color})${color}$(tput sgr0)"
     done
 }
 
